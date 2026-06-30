@@ -210,9 +210,5 @@ db.news.createIndex({ shcode: 1, dgubun: 1, _id: -1 })
 db.news.find({ shcode: "005930" }).sort({ _id: -1 }).limit(100)
 ```
 
-## 보안 주의사항
 
-- Atlas 사용자명, 비밀번호, 접속 URI를 GitHub에 커밋하지 마세요.
-- 문서에는 `<user>`, `<password>`, `<cluster-url>`처럼 placeholder를 사용하세요.
-- 테스트용 사용자는 필요한 DB에 대해서만 read/write 권한을 부여하는 것을 권장합니다.
 
